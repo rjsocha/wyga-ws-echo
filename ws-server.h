@@ -44,7 +44,7 @@ std::string client = R"(<!DOCTYPE html>
     };
     document.getElementById("send").onclick = function(evt) {
       if (!ws) {
-        print("RED","ERROR: please ","GREEN","OPEN","RED"," connection first ...");
+        print("RED","ERROR: ","BLUE", "please ","GREEN","OPEN","BLUE"," connection first");
         return false;
       }
       print("BLACK","S: ", "BLUE", input.value);
