@@ -28,14 +28,14 @@ std::string client = R"(<!DOCTYPE html>
     	const wsurl = `${protocol}//${host}/reverse`;
       ws = new WebSocket(wsurl);
       ws.onopen = function(evt) {
-        print("BLACK","OPEN: ","RED",wsurl);
+        print("PURPLE", "OPEN: ", "GREEN",wsurl);
       }
       ws.onclose = function(evt) {
-        print("RED","CLOSE");
+        print("PURPLE","CLOSE");
         ws = null;
       }
       ws.onmessage = function(evt) {
-        print("BLACK","R: ","GREEN", evt.data);
+        print("PURPLE","R: ","GREEN", evt.data);
       }
       ws.onerror = function(evt) {
         print("RED","ERROR: ","BLACK",evt.data);
@@ -47,7 +47,7 @@ std::string client = R"(<!DOCTYPE html>
         print("RED","ERROR: ","BLUE", "please ","GREEN","OPEN","BLUE"," connection first");
         return false;
       }
-      print("BLACK","S: ", "BLUE", input.value);
+      print("PURPLE","S: ", "BLUE", input.value);
       ws.send(input.value);
       return false;
     };
