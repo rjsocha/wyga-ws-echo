@@ -1,3 +1,14 @@
+# quick&dirty websocket server
+
+js/html part from https://raw.githubusercontent.com/gorilla/websocket/main/examples/echo/server.go
+
+
+```
+docker run --rm --init -it -p 8881:8000 wyga/ws-echo
+```
+
+http://localhost:8881/
+
 ```
 docker run --rm -it alpine sh
 apk add alpine-sdk upx
