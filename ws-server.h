@@ -2,7 +2,12 @@ std::string client = R"(<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Websocket Client ...</title>
+<title>WEBSOCKET</title>
+<style>
+  html {
+   font-size: 125%;
+  }
+</style>
 <script>
   window.addEventListener("load", function(evt) {
     var output = document.getElementById("output");
