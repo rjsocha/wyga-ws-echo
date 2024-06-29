@@ -7,6 +7,9 @@ std::string client = R"(<!DOCTYPE html>
   html {
    font-size: 125%;
   }
+  button,input {
+    font-size: 1em;
+  }
 </style>
 <script>
   window.addEventListener("load", function(evt) {
